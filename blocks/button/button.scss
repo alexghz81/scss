@@ -1,0 +1,24 @@
+@import "../../pages/var";
+
+.button {
+  border: 0;
+  border-radius: 8px;
+  background-color: $buttonColor;
+  color: $buttonText;
+  font-family: $font;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  min-width: 218px;
+  min-height: 48px;
+  padding: 0;
+  margin-bottom: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $buttonHoverColor;
+    transition: background-color .2s;
+    cursor: $cursor;
+  }
+}

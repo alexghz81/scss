@@ -1,0 +1,11 @@
+@import "../../pages/var";
+
+.text {
+  color: $fontColor;
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  max-width: 500px;
+}

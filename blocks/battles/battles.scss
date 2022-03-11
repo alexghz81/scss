@@ -1,0 +1,14 @@
+@import "../../pages/var";
+
+.battles {
+  padding: 81px 0 80px 160px;
+  background-image: url("../../images/battles-background.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left 100px;
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 105px 160px 0;
+  }
+}

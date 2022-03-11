@@ -1,0 +1,34 @@
+@import "../../pages/var";
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 160px;
+  margin-bottom: 80px;
+  background-image: url("../../images/description-background.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right;
+
+  &__bookmark {
+    color: $fontColor;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 90%;
+    margin: 0 0 71px 0;
+    min-height: 50px;
+    max-width: 65px;
+    background-color: $bgColorLight;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 19px;
+  }
+
+  &__image {
+    margin-top: 181px;
+    max-width: 416px;
+  }
+}
