@@ -3,9 +3,7 @@
 .description {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
-  margin-left: 160px;
-  margin-bottom: 80px;
+  margin: 60px 0 80px 160px;
   background-image: url("../../images/description-background.svg");
   background-repeat: no-repeat;
   background-position: top 10px right;
@@ -17,18 +15,46 @@
     font-weight: 500;
     line-height: 90%;
     margin: 0 0 71px 0;
-    min-height: 50px;
-    max-width: 65px;
+    height: 50px;
+    width: 65px;
     background-color: $bgColorLight;
     border-radius: 0 30px 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 19px;
+
+    @media screen and (max-width: $mobile) {
+      height: 40px;
+      width: 49px;
+      font-size: 12px;
+      margin: 36px 0 61px;
+      padding-left: 14px;
+    }
   }
 
   &__image {
     margin-top: 181px;
     max-width: 416px;
+    @media screen and (max-width: $tablet) {
+      margin-top: 211px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin: 110px 0 20px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin: 60px 0 50px 50px;
+    background-image: url("../../images/description-background-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top 160px right;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin: 0 20px;
+    background-image: url("../../images/description-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top 26px right;
   }
 }

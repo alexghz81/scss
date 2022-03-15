@@ -3,4 +3,12 @@
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
+
+  @media screen and (width: $tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (width: $mobile) {
+    max-width: 320px;
+  }
 }

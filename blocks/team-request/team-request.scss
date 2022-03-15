@@ -10,7 +10,29 @@
   background-position: 0 48px;
   padding-bottom: 40px;
 
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 119px;
+  }
+
   &__wrapper {
     margin: 160px 0 130px;
+    @media screen and (max-width: $tablet) {
+      margin: 110px -152px 80px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    background-image: url("../../images/team-request_background-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 38px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    background-image: url("../../images/team-request_background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 293px;
+    justify-content: center;
+    padding-right: 0;
+    margin: -38px 0 0;
   }
 }

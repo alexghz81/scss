@@ -4,8 +4,7 @@
   min-height: 54px;
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-left: 160px;
+  padding: 26px 160px 0;
   margin: 0;
 
   &__elements-wrapper {
@@ -13,7 +12,16 @@
     gap: 50px;
     margin-top: 2px;
     align-items: center;
-    padding-right: 160px;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 2px;
+      gap: 29px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 55px;
+      gap: 0;
+    }
   }
 
   &__icon {
@@ -29,10 +37,27 @@
     color: #ffffff;
     font-weight: 400;
     margin: 0;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 13px;
+      line-height: 125%;
+    }
   }
+
   &__text-wrapper {
     display: flex;
     gap: 13px;
     padding-right: 3px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 26px 50px 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 7px 20px 0;
+    &__text-wrapper {
+      visibility: hidden;
+    }
   }
 }

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Landing</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./vendor/swiper-bundle.css">
 </head>
 <body class="page">
 <div class="content-wrapper">
@@ -18,7 +19,7 @@
         <img src="./images/header-icon.svg" alt="Указатель на кнопку регистрации"
              class="header__icon">
       </div>
-      <button class="button" type="button">Зарегистрироваться</button>
+      <button class="button button_header" type="button">Зарегистрироваться</button>
     </div>
   </header>
   <main class="content">
@@ -36,22 +37,28 @@
       <p class="text">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть
         — одно удовольствие!</p>
       <div class="carousel">
-        <div class="carousel__item">
-          <img src="./images/team1.jpg" alt="Фото участника команды" class="carousel__image">
-          <p class="carousel__title">Андрей</p>
-          <p class="carousel__subtitle">Шахматист, писатель.</p>
-        </div>
-        <div class="carousel__item">
-          <img src="./images/team2.jpg" alt="Фото участника команды" class="carousel__image">
-          <p class="carousel__title">Никита</p>
-          <p class="carousel__subtitle">Шахматист, кулинар.</p>
-        </div>
-        <div class="carousel__item">
-          <img src="./images/team3.jpg" alt="Фото участника команды" class="carousel__image">
-          <p class="carousel__title">Алексей</p>
-          <p class="carousel__subtitle">Шахматист, геймер.</p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/team1.jpg" alt="Фото участника команды" class="carousel__image">
+              <p class="carousel__title">Андрей</p>
+              <p class="carousel__subtitle">Шахматист, писатель.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/team2.jpg" alt="Фото участника команды" class="carousel__image">
+              <p class="carousel__title">Никита</p>
+              <p class="carousel__subtitle">Шахматист, кулинар.</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/team3.jpg" alt="Фото участника команды" class="carousel__image">
+              <p class="carousel__title">Алексей</p>
+              <p class="carousel__subtitle">Шахматист, геймер.</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
+
     </section>
     <section class="team-request">
       <div class="team-request__wrapper">
@@ -64,15 +71,24 @@
       <p class="text">Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои
         навыки — сыграйте с&nbsp;нашими шахматистами.</p>
       <div class="carousel">
-        <div class="carousel__item">
-          <img src="./images/battles1.jpg" alt="Фото сражений" class="carousel__image">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/battles1.jpg" alt="Фото шахматных сражений"
+                   class="carousel__image">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/battles2.jpg" alt="Фото шахматных сражений"
+                   class="carousel__image">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/battles3.jpg" alt="Фото шахматных сражений"
+                   class="carousel__image">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="carousel__item">
-          <img src="./images/battles2.jpg" alt="Фото сражений" class="carousel__image">
-        </div>
-        <div class="carousel__item">
-          <img src="./images/battles3.jpg" alt="Фото сражений" class="carousel__image">
-        </div>
+
       </div>
       <div class="battles__image-wrapper">
         <img src="./images/battles-chessboard.svg" alt="Изображение шахматной доски">
@@ -80,16 +96,29 @@
     </section>
   </main>
   <footer class="footer">
-    <img src="./images/logo.svg" alt="Логотип" class="logo">
-    <button class="button" type="button">Зарегистрироваться</button>
+    <img src="./images/logo.svg" alt="Логотип" class="logo logo_footer">
+    <button class="button button_footer" type="button">Зарегистрироваться</button>
     <div>
       <p class="text">Шахматный клуб в Москве.</p>
-      <p class="footer__copyright">&copy; Chees Club.</p>
+      <p class="footer__copyright">&copy; Chess Club.</p>
     </div>
   </footer>
-  <section class="popup">
-
+  <section class="popup" aria-label="Регистрация">
+    <div class="popup__container">
+      <img src="./images/logo.svg" alt="Логотип" class="logo">
+      <p class="popup__title">Регистрация</p>
+      <form name="registration" class="form">
+        <div class="form__input-wrapper">
+          <input type="text" class="form__input" name="profile__name" placeholder="Имя">
+          <input type="text" class="form__input" name="profile__email" placeholder="Email">
+        </div>
+        <button type="submit" name="form__submit" class="button button_register">Зарегистрироваться
+        </button>
+      </form>
+    </div>
   </section>
 </div>
+<script src="./vendor/swiper-bundle.js"></script>
+<script src="./script/script.js"></script>
 </body>
 </html>

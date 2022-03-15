@@ -10,5 +10,28 @@
     display: flex;
     justify-content: flex-end;
     margin: 105px 160px 0;
+
+    @media screen and (max-width: $tablet) {
+      margin: 136px 50px 0 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+      justify-content: center;
+      width: 280px;
+      height: 70px;
+      margin-top: 94px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    background-image: url("../../images/battles-background-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 50px 0 80px 50px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 21px 20px;
+    background: none;
   }
 }

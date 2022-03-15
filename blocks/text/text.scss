@@ -1,6 +1,10 @@
 @import "../../pages/var";
 
 .text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   color: $fontColor;
   font-family: $font;
   font-size: 20px;
@@ -8,4 +12,10 @@
   line-height: 26px;
   margin: 0;
   max-width: 500px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 12px;
+    line-height: 15.6px;
+    max-width: 280px;
+  }
 }
