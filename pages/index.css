@@ -215,7 +215,7 @@
 @media screen and (max-width: 768px) {
   .description {
     margin: 60px 0 50px 50px;
-    background-image: url("../../images/description-background-tablet.svg");
+    background-image: url("../images/description-background-tablet.svg");
     background-repeat: no-repeat;
     background-position: top 160px right;
   }
@@ -223,7 +223,7 @@
 @media screen and (max-width: 320px) {
   .description {
     margin: 0 20px;
-    background-image: url("../../images/description-background-mobile.svg");
+    background-image: url("../images/description-background-mobile.svg");
     background-repeat: no-repeat;
     background-position: top 26px right;
   }
@@ -353,7 +353,7 @@
   background-color: #5036e6;
   justify-content: flex-end;
   padding-right: 140px;
-  background-image: url("../../images/team-request_background.svg");
+  background-image: url("../images/team-request_background.svg");
   background-repeat: no-repeat;
   background-position: 0 48px;
   padding-bottom: 40px;
@@ -373,14 +373,14 @@
 }
 @media screen and (max-width: 768px) {
   .team-request {
-    background-image: url("../../images/team-request_background-tablet.svg");
+    background-image: url("../images/team-request_background-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 38px;
   }
 }
 @media screen and (max-width: 320px) {
   .team-request {
-    background-image: url("../../images/team-request_background-mobile.svg");
+    background-image: url("../images/team-request_background-mobile.svg");
     background-repeat: no-repeat;
     background-position: 20px 293px;
     justify-content: center;
@@ -391,7 +391,7 @@
 
 .battles {
   padding: 81px 0 80px 160px;
-  background-image: url("../../images/battles-background.svg");
+  background-image: url("../images/battles-background.svg");
   background-repeat: no-repeat;
   background-position: bottom left 100px;
 }
@@ -415,7 +415,7 @@
 }
 @media screen and (max-width: 768px) {
   .battles {
-    background-image: url("../../images/battles-background-tablet.svg");
+    background-image: url("../images/battles-background-tablet.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     padding: 50px 0 80px 50px;

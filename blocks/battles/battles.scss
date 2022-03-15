@@ -2,7 +2,7 @@
 
 .battles {
   padding: 81px 0 80px 160px;
-  background-image: url("../../images/battles-background.svg");
+  background-image: url("../images/battles-background.svg");
   background-repeat: no-repeat;
   background-position: bottom left 100px;
 
@@ -24,7 +24,7 @@
   }
 
   @media screen and (max-width: $tablet) {
-    background-image: url("../../images/battles-background-tablet.svg");
+    background-image: url("../images/battles-background-tablet.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     padding: 50px 0 80px 50px;

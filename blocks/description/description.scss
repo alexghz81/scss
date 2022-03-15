@@ -46,14 +46,14 @@
 
   @media screen and (max-width: $tablet) {
     margin: 60px 0 50px 50px;
-    background-image: url("../../images/description-background-tablet.svg");
+    background-image: url("../images/description-background-tablet.svg");
     background-repeat: no-repeat;
     background-position: top 160px right;
   }
 
   @media screen and (max-width: $mobile) {
     margin: 0 20px;
-    background-image: url("../../images/description-background-mobile.svg");
+    background-image: url("../images/description-background-mobile.svg");
     background-repeat: no-repeat;
     background-position: top 26px right;
   }

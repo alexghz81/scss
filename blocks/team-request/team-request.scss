@@ -5,7 +5,7 @@
   background-color: $bgColorLight;
   justify-content: flex-end;
   padding-right: 140px;
-  background-image: url("../../images/team-request_background.svg");
+  background-image: url("../images/team-request_background.svg");
   background-repeat: no-repeat;
   background-position: 0 48px;
   padding-bottom: 40px;
@@ -22,13 +22,13 @@
   }
 
   @media screen and (max-width: $tablet) {
-    background-image: url("../../images/team-request_background-tablet.svg");
+    background-image: url("../images/team-request_background-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 38px;
   }
 
   @media screen and (max-width: $mobile) {
-    background-image: url("../../images/team-request_background-mobile.svg");
+    background-image: url("../images/team-request_background-mobile.svg");
     background-repeat: no-repeat;
     background-position: 20px 293px;
     justify-content: center;
