@@ -19,12 +19,15 @@
         <img src="./images/header-icon.svg" alt="Указатель на кнопку регистрации"
              class="header__icon">
       </div>
-      <button class="button button_header" type="button">Зарегистрироваться</button>
+      <div class="button">
+        <button class="button__register button__register_header" type="button">Зарегистрироваться
+        </button>
+      </div>
     </div>
   </header>
   <main class="content">
     <section class="description">
-      <div class="description__bookmark">КЛУБ</div>
+      <p class="description__bookmark">КЛУБ</p>
       <h1 class="title">Правильные шахматы</h1>
       <p class="text">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц
         состязании
@@ -36,29 +39,28 @@
       <h2 class="title">Наша команда</h2>
       <p class="text">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть
         — одно удовольствие!</p>
-      <div class="carousel">
+      <div class="swiper">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./images/team1.jpg" alt="Фото участника команды" class="carousel__image">
-              <p class="carousel__title">Андрей</p>
-              <p class="carousel__subtitle">Шахматист, писатель.</p>
+              <img src="./images/team1.jpg" alt="Фото участника команды" class="swiper__image">
+              <p class="swiper__title">Андрей</p>
+              <p class="swiper__subtitle">Шахматист, писатель.</p>
             </div>
             <div class="swiper-slide">
-              <img src="./images/team2.jpg" alt="Фото участника команды" class="carousel__image">
-              <p class="carousel__title">Никита</p>
-              <p class="carousel__subtitle">Шахматист, кулинар.</p>
+              <img src="./images/team2.jpg" alt="Фото участника команды" class="swiper__image">
+              <p class="swiper__title">Никита</p>
+              <p class="swiper__subtitle">Шахматист, кулинар.</p>
             </div>
             <div class="swiper-slide">
-              <img src="./images/team3.jpg" alt="Фото участника команды" class="carousel__image">
-              <p class="carousel__title">Алексей</p>
-              <p class="carousel__subtitle">Шахматист, геймер.</p>
+              <img src="./images/team3.jpg" alt="Фото участника команды" class="swiper__image">
+              <p class="swiper__title">Алексей</p>
+              <p class="swiper__subtitle">Шахматист, геймер.</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
     </section>
     <section class="team-request">
       <div class="team-request__wrapper">
@@ -70,25 +72,24 @@
       <h2 class="title">Сражения</h2>
       <p class="text">Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои
         навыки — сыграйте с&nbsp;нашими шахматистами.</p>
-      <div class="carousel">
+      <div class="swiper">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./images/battles1.jpg" alt="Фото шахматных сражений"
-                   class="carousel__image">
+                   class="swiper__image">
             </div>
             <div class="swiper-slide">
               <img src="./images/battles2.jpg" alt="Фото шахматных сражений"
-                   class="carousel__image">
+                   class="swiper__image">
             </div>
             <div class="swiper-slide">
               <img src="./images/battles3.jpg" alt="Фото шахматных сражений"
-                   class="carousel__image">
+                   class="swiper__image">
             </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
       <div class="battles__image-wrapper">
         <img src="./images/battles-chessboard.svg" alt="Изображение шахматной доски">
@@ -97,7 +98,10 @@
   </main>
   <footer class="footer">
     <img src="./images/logo.svg" alt="Логотип" class="logo logo_footer">
-    <button class="button button_footer" type="button">Зарегистрироваться</button>
+    <div class="button">
+      <button class="button__register button__register_footer" type="button">Зарегистрироваться
+      </button>
+    </div>
     <div>
       <p class="text">Шахматный клуб в Москве.</p>
       <p class="footer__copyright">&copy; Chess Club.</p>
@@ -106,14 +110,17 @@
   <section class="popup" aria-label="Регистрация">
     <div class="popup__container">
       <img src="./images/logo.svg" alt="Логотип" class="logo">
-      <p class="popup__title">Регистрация</p>
+      <h2 class="popup__title">Регистрация</h2>
       <form name="registration" class="form">
-        <div class="form__input-wrapper">
+        <fieldset class="form__input-wrapper">
           <input type="text" class="form__input" name="profile__name" placeholder="Имя">
           <input type="text" class="form__input" name="profile__email" placeholder="Email">
+        </fieldset>
+        <div class="button">
+          <button type="submit" name="form__submit"
+                  class="button__register button__register_popup">Зарегистрироваться
+          </button>
         </div>
-        <button type="submit" name="form__submit" class="button button_register">Зарегистрироваться
-        </button>
       </form>
     </div>
   </section>

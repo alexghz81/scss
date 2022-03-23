@@ -23,7 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
@@ -40,6 +40,7 @@
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+  margin: auto;
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -249,14 +250,14 @@
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 4px;
   --swiper-pagination-bullet-vertical-gap: 6px;
-  */
+*/
 }
 .swiper-pagination {
   position: absolute;
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
-  z-index: 10;
+  z-index: 20;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;

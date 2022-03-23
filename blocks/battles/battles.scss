@@ -5,6 +5,7 @@
   background-image: url("../images/battles-background.svg");
   background-repeat: no-repeat;
   background-position: bottom left 100px;
+  overflow: hidden;
 
   &__image-wrapper {
     display: flex;
