@@ -1,0 +1,21 @@
+@import "../../pages/var";
+
+.title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  color: $fontColor;
+  font-family: $font;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 90%;
+  max-width: 540px;
+  margin: 0 0 40px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 40px;
+    margin: 0 0 20px;
+    max-width: 280px;
+  }
+}

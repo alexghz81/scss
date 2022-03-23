@@ -1,0 +1,61 @@
+@import "../../pages/var";
+
+.button {
+  align-self: center;
+
+  &__register {
+    border: 0;
+    border-radius: 8px;
+    background-color: $buttonColor;
+    color: $buttonText;
+    font-family: $font;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    width: 218px;
+    height: 48px;
+    padding: 0;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: $buttonHoverColor;
+      transition: background-color .2s;
+      cursor: $cursor;
+    }
+
+    @media screen and (max-width: $tablet) {
+      &_header {
+        width: 184px;
+        height: 44px;
+        padding-bottom: 2px;
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (max-width: $mobile) {
+      &_header {
+        width: 164px;
+        height: 30px;
+        font-size: 10px;
+        padding: 0;
+        margin: 0 6px 5px -3px;
+      }
+
+      &_footer {
+        width: 140px;
+        font-size: 10px;
+        margin: 3px 0 4px;
+        height: 30px;
+      }
+
+      &_popup {
+        width: 140px;
+        height: 30px;
+        font-size: 10px;
+      }
+    }
+  }
+}
